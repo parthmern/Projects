@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container
+{
+    background: linear-gradient(90deg,#b70012 30%, #820410 30%);
+    height: 100vh;
+    font-family: 'Jost', sans-serif;
+}
+
+.navbar
+{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-content: center;
+    
+}
+
+.navbar-left
+{
+    height: 3rem;
+    width: 5rem;
+    background-image: url(./images/icon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 20px;
+}
+
+.navbar-right
+{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 4em;
+    align-items: center;
+    margin-right: 7%;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.nr1:hover,.nr2:hover 
+{
+    transition: all 0.5s;
+    transform: scale(1.1);
+    color: rgb(0, 183, 255);
+    cursor: pointer;
+}
+
+.tickets
+{
+    color: #820410;
+    background-color: white;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.tickets:hover
+{
+    transition: all 0.3s ease-in;
+    color: rgb(0, 225, 255);
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+
+.hero
+{
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+    justify-content: space-evenly;
+
+
+    width: auto;
+    margin-top: 80px;
+    height: 90vh;
+    margin-left:10%;
+    margin-right: 10%;
+
+    color: white;
+
+ 
+
+}
+
+.hero-middle img
+{
+    width: 100%;
+    height: 100%;   
+}
+
+.logo img
+{
+     height: 90%;
+    width: 90%;
+}
+
+.hero-left
+{
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+}
+
+.hl1
+{
+    
+    font-size: 1em;
+    font-weight: 50;
+}
+
+.hl2 , .hl3
+{
+    font-size: 100%;
+    font-weight: 100;
+}
+
+.logo
+{
+
+    width: 120%;
+}
+
+.button
+{
+    color: black ;
+    width: 90px;
+    background-color: white;
+    margin-top: 15%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.fa-solid
+{
+    height: 80px;
+    width: 80px;
+}
+
+.button:hover
+{
+    background-color: #000000;
+    color: white;
+    
+}
+
+
+
+
+.hero-right
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hr1
+{
+    font-size: 100%;
+    font-weight: 100;
+}
+
+.hr2
+{
+    font-size: 9em;
+}
+
+.hrss:hover
+{
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+.hr3
+{
+    margin-top: -10px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
