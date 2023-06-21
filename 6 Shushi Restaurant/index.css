@@ -1,0 +1,1059 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #fff0de;
+}
+
+.navbar{
+
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nav-left{
+    color: white;
+    padding: 2em;
+    background-color: #b1454a;
+}
+
+.nav-right-list{
+    display: flex;
+    font-size: 0.5em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 2em;
+
+    justify-content: flex-end;
+    
+    
+}
+
+@media (max-width: 1045px){
+
+    .nav-right-list{
+        padding: 2em;
+
+    }
+
+    .nav-right-list .md1{
+        padding: 1em;
+        
+    }
+    
+    .nav-right-list div{
+        padding: 1em;
+    }
+}
+
+.nav-right-list h2{
+    padding: 2em;
+}
+
+.nav-right-list div{
+    padding: 2em;
+}
+
+/* ------------------------------------------------- */
+/* HEROsection */
+
+.hero{
+    display: grid;
+    grid-template-columns: 0.8fr  1fr;
+    
+    height: fit-content;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hero-left{
+    background-color: #b1454a;
+    position: relative;
+}
+
+.hero-left-img{
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    width: 120%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero-left-fonts{
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+
+}
+
+.hero-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-right-upper {
+    padding: 60px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    
+}
+
+
+.hero-right-upper h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+
+.hero-right-upper p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+.bn59 {
+    background-color: #141414;
+    border: 1px solid rgba(54, 54, 54, 0.6);
+    
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+.hero-right-upper-button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.how-to-order{
+    display: flex;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+.how-to-order img{
+    width: 30px;
+}
+
+.hero-right-lower{
+    display: flex;
+    padding: 20px;
+    padding-left: 60px;
+    gap: 20px;
+    background-color: white;
+}
+
+.hero-right-lower-left{
+    display: flex;
+    align-items: center;
+}
+
+.hero-right-lower-left h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.hero-right-lower-left p{
+    color: #888888;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 10px;
+}
+
+.hero-right-lower-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-left: 20px;
+    border-left: 1px solid #888888;
+}
+
+.hero-right-lower-right img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.hero-right-lower-right p{
+    color: #888888;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 10px;
+}
+@media (min-width: 1173px){
+    .hero-left img{
+        width: auto;
+    }
+}
+
+@media (max-width: 1172px){
+    .hero-left img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 830px){
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+
+    .hero-left{
+        height: 90vh;
+        overflow-x: hidden;
+        
+    }
+
+    .hero-left img{
+        width:90%;
+        margin-left: 0%;
+        
+    }
+
+    .nav-right{
+        visibility: hidden;
+        content: none;
+        display: none;
+    }
+
+    .nav-right-list{
+        visibility: hidden;
+        content: none;
+    }
+
+    .navbar{
+        grid-template-columns: repeat(1,auto);
+    }
+
+
+}
+
+@media (max-width: 468px){
+    .hero-left-img{
+        
+    
+    }
+
+    .hero-right-lower{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-right-upper{
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hero-right-lower{
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 290px){
+    .hero-left-img{
+        width: 30%;
+        height: 30%;
+        margin-left: -10%;
+        position: sticky;
+    }
+
+    .hero-right-upper-button{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* -------------------------------------------- */
+/* about us section */
+
+.aboutus{
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    margin-top: 2%;
+
+    grid-template-columns: 1fr 1.2fr;
+}
+
+.aboutus-left{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 10px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.aboutus-left-upper{
+    padding: 10%;
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+}
+
+.aboutus-left-upper img{
+    width: 50%;
+   
+}
+
+.aboutus-left-lower{
+    padding: 10%;
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+}
+
+.aboutus-left-lower img{
+    width: 50%;
+}
+
+.bkimg1{
+   
+ 
+}
+
+.bkimg22{
+    
+    scale: 3;
+}
+
+.bkimg11{
+    
+    scale: 3;
+}
+
+.aboutus-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 4em;
+
+}
+
+.aboutus-right p{
+    color: #b1454a;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+.aboutus-right h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+.aboutus-right h3{
+    color: #888888;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+@media (max-width: 1050px){
+    .aboutus{
+        grid-template-columns: repeat(1,auto);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .aboutus-left{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .aboutus-right{
+        padding-top: 2em;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .aboutus-right h2{
+        font-size: 2em;
+    }
+
+}
+
+@media (max-width: 622px){
+    .aboutus-left{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* -------------------------------- */
+/* POPULAR SECTION */
+
+.bn50 {
+    background-color: #141414;
+    border: 1px solid rgba(54, 54, 54, 0.6);
+    
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+.popular{
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    margin-top: 2%;
+
+    grid-template-rows: 0.3fr 1fr 0.4fr;
+
+    /* grid-template-rows: auto auto 1.5fr; */
+    
+
+    gap: 10%;
+
+    background-color: #b1454a;
+    padding: 3em;
+
+    
+    
+
+}
+
+.popularheading{
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.mainsection{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+.mainsection1{
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.2);
+    padding: 2em;
+    border-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.nameoffood1{
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: white;
+}
+
+.price{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1em;
+
+    font-weight: 200;
+}
+
+.pricesection{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+
+    justify-content: center;
+}
+
+.detailsection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate{
+    display: flex;
+    gap: 5px;
+}
+
+.ms1{
+    width: auto;
+    height: 5em;
+}
+
+.ms2{
+    width: auto;
+    height: 7em;
+}
+
+.ms3{
+    width: auto;
+    height: 5em;
+}
+
+.mainsection2{
+    padding: 2em;
+    border-radius: 10%;
+
+    background-color: #fff0de;
+}
+
+.nameoffood2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    color: #555555;
+    font-size: 1.5em;
+}
+
+.price2{
+    color: #555555;
+
+}
+
+.price3{
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1em;
+
+    font-weight: 200;
+}
+
+.expbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.bn50{
+    display: flex;
+    gap: 10px;
+    
+    justify-content: center;
+}
+
+.bn50 img{
+    width: 13px;
+    height: 13px;
+}
+
+@media (max-width: 1072px){
+    .mainsection{
+        gap: 5%;
+        
+    }
+
+    .mainsection1{
+        margin: 15px;
+    }
+
+    .popular{
+        gap: 5%;
+        padding: 2em;
+
+        grid-template-rows: 0.3fr 1fr 0.1fr;
+    }
+
+
+}
+
+@media (max-width: 667px){
+    .popular{
+        gap: 1.5%;
+        grid-template-rows: auto auto 100px;
+    }
+}
+
+@media (max-width: 400px){
+    .popularheading{
+        font-size: 1.3em;
+    }
+    .mainsection1{
+        padding: 1em;
+        
+        align-items: center;
+    }
+    .mainsection1 img{
+        display: flex;
+        width: 100px;
+    }
+    .mainsection2{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainsection2 img{
+        width: 130px;
+    }
+    .nameoffood2{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 325px){
+    .popularheading{
+        font-size: 1em;
+    }
+    .mainsection1 img{
+        display: flex;
+        width: 80px;
+        height: 70px;
+    }
+    .mainsection2 img{
+        width: 90px;
+    }
+    .nameoffood2{
+        font-size: 1em;
+    }
+    .nameoffood1{
+        font-size: 0.7em;
+    }
+    .popular{
+      
+        padding: 0;
+    }
+    .mainsection{
+        padding: 0px;
+        
+    }
+    .popularheading{
+        margin-top: 30px;
+    }
+}
+
+.popular{
+    background-image: url(./images/popular_bg.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+/* ----------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+/* TRENDING SECTION */
+.trending{
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    
+
+    grid-template-rows: repeat(2,400px);
+}
+
+.trending-part-1 , .trending-part-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+
+.trending-part-1 img{
+    width: 180px;
+    
+}
+
+.trending-part-1-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image: url(./images/japanese_sushi.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+
+.trending-part-1-left{
+    display: flex;
+    gap: 7%;
+    padding: 5%;
+    flex-direction: column;
+    
+    justify-content: center;
+    
+    
+}
+
+.trending-tick{
+    display: flex;
+
+    flex-direction: row;
+    
+}
+
+#mkeSus{
+    color: black;
+}
+
+.trending-tick p{
+    margin-left: 5px;
+
+}
+
+.trending-tick-section{
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    row-gap: 20px; */
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.trending-part-1-left p{
+    color: #b1454a;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.7em;
+}
+
+.trending-part-1-left h2{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.trending-part-1-left h3{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.7em;
+    color: #888888;
+    font-weight: 100;
+}
+
+.trending-part-2-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.trending-part-2 img{
+    width: 150px;
+    
+    
+}
+
+.trending-part-2-left{
+   background-color: white;
+}
+
+.arrow-verticle{
+    position: absolute;
+    height: 300px;
+    right: -75px;
+}
+
+.arrow-verticle-part1{
+    position: absolute;
+    height: 300px;
+    left: -89px;
+}
+
+.arrow-horizontal-part1{
+    position: absolute;
+    width: 300px;
+    bottom: -1px;
+    transform: scale(1.5);
+}
+
+.arrow-horizontal-part2{
+    position: absolute;
+    width: 300px;
+    top: -1px;
+    transform: scale(1.8);
+}
+
+.discover-btn{
+    position: absolute;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    height: 80px;
+    width: 80px;
+
+    top: 90%;
+    right: 93%;
+    z-index: 1000;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.7em;
+
+    
+
+}
+
+
+/* mediaquery */
+@media (max-width: 1100px){
+    .discover-btn{
+       
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .arrow-horizontal-part2,.arrow-horizontal-part1,.arrow-verticle-part1,.arrow-verticle{
+        display: none;
+    }
+
+    .trending-part-1{
+        grid-template-columns: none;
+    }
+
+    .trending{
+        grid-template-rows: repeat(2,500px);
+    }
+
+    
+}
+
+@media (max-width: 500px){
+    .trending-part-2{
+        grid-template-columns: none;
+        
+    }
+    .trending{
+        gap: 30px;
+    }
+    .trending-tick-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .trending-part-1-left{
+        gap: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .trending{
+        grid-template-rows: repeat(2,600px);
+    }
+    .trending-part-1{
+        row-gap: 15px;
+    }
+    .trending-part-2{
+        row-gap: 15px;
+    }
+}
+
+@media (max-width: 275px){
+    .trending-tick-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .trending{
+        grid-template-rows: repeat(2,700px);
+    }
+    
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------------------------------ */
+/* SUBSCRIPTION SECTION */
+
+.subscription{
+    height: fit-content;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(./images/subscribe_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscription-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 5em;
+}
+
+.subscription-main h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    
+    text-align: center;
+    max-width: 400px;
+
+    color: white;
+}
+
+.subscription-main h3{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.7em;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+.email-section{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.bn51 {
+    background-color: #141414;
+    border: 1px solid rgba(54, 54, 54, 0.6);
+    
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 130px;
+    opacity: 1;
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+#email{
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.getstarted-btn-hide{
+    
+    display:none
+}
+
+/* media query */
+/* ------------------------------- */
+
+@media (max-width : 500px){
+    .subscription-main h2{
+        font-size: 2.5em;
+    }
+    .getstarted-btn{
+        
+        display:none;
+    }
+    .getstarted-btn-hide{
+        visibility: visible;
+        display: block;
+    }
+    .email-section{
+        width: 180px;
+    }
+
+}
+
+/* ----------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* FOOTER SECTION */
+
+.footer{
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    padding: 1em;
+}
+
+.footer i {
+   scale: 1.9;
+}
+
+.footer-right,.footer-middle{
+    display: flex;
+    gap: 30px;
+}
+
+.footer-middle{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+.footer-left{
+    font-size: 1.1em;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #b1454a;
+}
+
+.footer-left span{
+    color: black;
+}
+
+
+@media (max-width : 700px){
+    .footer{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width : 400px){
+    .footer-middle{
+        font-size: 0.6em;
+    }
+}
