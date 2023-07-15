@@ -1,0 +1,753 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    /* background-color: blue; */
+    
+    
+}
+#wrapper{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo img{
+    width: 100px;
+    
+}
+
+.navbar{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    /* background-color: red; */
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10% ;
+    color: white;
+    font-size: 0.83rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    min-width: 200px;
+}
+
+
+
+/* MAIN PAGE */
+/* ------------------------------------ */
+
+.main , .original{
+    background-color: rgb(253, 253, 253);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow: hidden;
+    
+}
+
+/* .bg-img{
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 390px);
+    left: calc(50% + 10px);
+    transform: translate(-50%,-50%);
+}
+
+.fog-7{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: calc(50% - 100px);
+    left: calc(50% + 300px);
+    transform: translate(-50%,-50%);
+}
+
+.mountain-10{
+
+} */
+
+.bg-img{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    transform: translateY(-20%);
+    scale: 1.8;
+
+}
+
+.fog-7{
+    z-index: 1;
+    width: 100%;
+}
+
+.mountain-10{
+    position: absolute;
+    width: 50%;
+    left: -5%;
+    top: 30%;
+    z-index: 3;
+}
+
+.fog-6{
+    position: absolute;
+    
+    z-index: 4;
+    width: 130%;
+    top: 0;
+    left: -10%;
+
+    opacity: 0.7;
+    
+}
+
+.mountain-9{
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    left: 5%;
+    width: 40%;
+}
+
+.mountain-8{
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    left:5%;
+    width: 60%;
+}
+
+.fog-5{
+    position: absolute;
+    
+    z-index: 5;
+    width: 100%;
+    top: 10%;
+    left: -50%;
+    
+    
+}
+.mountain-7{
+    position: absolute;
+    z-index: 3;
+    top: 20%;
+    right:-20%;
+    width: 60%;
+}
+
+.text{
+    z-index: 5;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: -50px;
+    
+}
+.text img{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    scale: 3;
+}
+
+.text h1{
+    /* top: 0;
+    left: 40%; */
+    /* position: absolute; */
+    font-size: 7rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    margin-top: -50px;
+    text-shadow: 3px 3px 9px rgba(0, 0, 0, 1);
+}
+
+.text h2{
+    /* top: 0px;
+    left: 40%; */
+    /* position: absolute; */
+    
+    font-size: 7rem;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.7);
+}
+
+.mountain-6{
+    position: absolute;
+    z-index: 6;
+    top: -15%;
+    right:-20%;
+    width: 70%;
+}
+.fog-4{
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    top: 10%;
+    right: -50%;
+
+}
+.mountain-5{
+    position: absolute;
+    z-index: 6;
+    top: 45%;
+    left : 30%;
+    width: 60%;
+}
+.mountain-4{
+    position: absolute;
+    z-index: 6;
+    top: 30%;
+    right : -10%;
+    width: 60%;
+}
+
+.mountain-3{
+    position: absolute;
+    z-index: 7;
+    top: 30%;
+    right : -15%;
+    width: 50%;
+}
+.fog-2{
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+
+}
+
+.mountain-2{
+    position: absolute;
+    z-index: 9;
+    top: 40%;
+    left : 5%;
+    width: 50%;
+}
+.mountain-1{
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left : -10%;
+    width: 50%;
+}
+
+.sun-rays{
+    position: absolute;
+    z-index: 11;
+    top: 0%;
+    right: 0;
+    width: 100%;
+}
+.fog-1{
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+
+}
+
+.parallax{
+    /* border: 1px solid green ; */
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99) ;
+}
+.btn{
+    display: none;
+   
+}
+.hidden-login{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    min-width: 70px;
+    right: 5%;
+    top: 100%;
+    display: none;
+    background-color: black;
+    color: aqua;
+    padding: 10px;
+    border-radius: 3px;
+}
+.nav {
+    display: none;
+    margin-top: -10px;
+  }
+
+
+/* 
+// element.style.transform = `translateX(calc(-50% + ${xValue}px)) translateY(calc(-50% + ${yValue}px)))` ;
+// element.style.transform = `translateX(${xValue})px translateY(${yValue})px`; */
+
+
+@media (max-width : 1080px){
+    .mountain-4{
+        top : 40%;
+    }
+    .bg-img{
+        scale: 2.3;
+        top: 0;
+    }
+    .mountain-3{
+        right: -7%;
+    }
+    .text h2{
+        font-size: 5rem;
+       
+    }
+    .text h1{
+        font-size: 5rem;
+    }
+    .text{
+        top: 28%;
+    }
+}
+@media (max-width : 850px){
+    .bg-img{
+        opacity: 0;
+        scale: 2.5;
+        transition-timing-function: 0.1;
+        animation-duration: 0.1s;
+    }
+    .mountain-5{
+        left: 0;
+    }
+    .text{
+        top: 20%;
+        left: 15%;
+    }
+    .mountain-5,.mountain-2,.mountain-3,.mountain-6,.mountain-1,.mountain-4{
+        top: 60%;
+    }
+    .mountain-9,.mountain-8,.mountain-10,.mountain-7{
+        top: 70%;
+    }
+    .main{
+        background-image: url(./images/background.png);
+        background-size: cover;
+    }
+
+
+}
+
+@media (max-width : 560px){
+    .mountain-5,.mountain-2,.mountain-3,.mountain-6,.mountain-1,.mountain-4{
+        top: 70%;
+    }
+    .mountain-9,.mountain-8,.mountain-10,.mountain-7{
+        top: 80%;
+    }
+    .text h2{
+        font-size: 3rem;
+    }
+    .text h1{
+        font-size: 3.3rem;
+        margin: 0%;
+    }
+    .navbar .nav-text{
+        display: none;
+    }
+    .nav{
+        /* display: flex; */
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+}
+
+@media (max-width : 470px){
+    .mountain-5,.mountain-2,.mountain-3,.mountain-6,.mountain-1,.mountain-4{
+        display: none;
+    }
+    .mountain-9,.mountain-8,.mountain-10,.mountain-7{
+        display: none;
+    }
+    .text{
+        left: 20px;
+    }
+    .text h2{
+        font-size: 2rem;
+    }
+    .text h1{
+        font-size: 3rem;
+        margin: 0%;
+    }
+   
+
+
+}
+@media (max-width : 350px){
+    .text h2{
+        font-size: 1.3rem;
+    }
+    .text h1{
+        font-size: 2.5rem;
+        margin: 0%;
+    }
+}
+
+
+
+
+
+
+/* fake nav */
+
+
+  
+  .logo {
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+  }
+  
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    scale: 0.6;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .nav__link {
+    position: fixed;
+    width: 90%;
+    top: 5rem;
+    left: 18px;
+    background-color: rgba(10, 28, 32, 0.359);
+  }
+  
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav__link a:hover {
+    background-color: rgba(240, 128, 128, 0.472);
+  }
+  
+  .hide {
+    display: none;
+  }
+
+
+/* new Loader */
+.loader{
+    position: absolute;
+    z-index: 1000;
+    /* display: none; */
+}
+
+.loader{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "akira";
+}
+
+.line-loader{
+    max-width: 500px;
+    height: 3px;
+    background-color: #FEDA14;
+}
+
+.left{
+    margin-top: 10%;
+    font-size: 2rem;
+    color: rgb(57, 255, 20) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media (max-width : 900px){
+    .loader{
+        flex-direction: column;
+    }
+    .loader > .left{
+        font-size: 30px;
+    }
+    .loader > .right{
+        display: flex;
+        height: 50%;
+        font-size: 30px;
+    }
+    .line-loader{
+        max-width: 300px;
+    }
+}
+
+
+/* intro-section */
+
+@font-face {
+    font-family: akira;
+    src: url(./fonts/Akira\ Expanded\ Demo.otf);
+}
+
+.intro-section{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    
+    
+}
+
+.intro-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.intro-text{
+    color: white;
+    font-family: "akira";
+    font-size: 3rem;
+    min-width: 50%;
+    flex: 1.4;
+}
+
+.intro-btn{
+    flex: 0.6;
+    background-color: white;
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;   
+    border: none;
+}
+
+.intro-btn video{
+    width: 100%;
+}
+
+
+/* home section */
+
+.home-main{
+    background: url(./assets/explore-beach.jpg);
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.home-main{
+    overflow: hidden;
+}
+
+.home-main img{
+    width: 100%;
+    
+}
+
+.home-text{
+    display: flex;
+    /* position: absolute; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;        
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.home-text h3{
+    font-size: 1rem;
+}
+
+.home-text h2{
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.home-text-btn{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: thistle;
+    padding: 0.8rem 1.7rem;
+    color: black;
+    transition: 1s;
+}
+
+.home-text-btn:hover{
+    background-color: aqua;
+}
+
+/* media query */
+
+@media (max-width : 700px){
+    .intro-sec{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .intro-btn{
+        width: 300px;
+    }
+}
+
+@media (max-width : 470px){
+    .intro-text{
+        font-size: 1.7rem;
+    }
+    .intro-btn{
+        width: 200px;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+}
+
+
+/* world */
+.world{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.world-section{
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px;
+    
+}
+
+.world-section-cards{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.world-section-card-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.world-section-card-1-img{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    /* background: radial-gradient(ellipse, #0000, #0007); */
+    
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./assets/home-mountain.jpg); */
+}
+
+.world-section-card-1-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.world-section-card-1-img > img:hover{
+    transition: all linear 1s;
+    
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.world-section-text{
+    font-size: 3rem;
+}
+
+@media(max-width : 1100px){
+    .world{
+        height: 150vh;
+    }
+}
+@media(max-width : 800px){
+    .world{
+        height: 220vh;
+    }
+}
+@media(max-width : 475px){
+    .world-section-card-1-img{
+        width: 200px;
+        height: 200px;
+    }
+    .world{
+        overflow: hidden;
+        height: 180vh;
+    }
+}
